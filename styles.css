@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+ body {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .header h2 {
+    color: #989898;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+   h2, h3, p {
+    text-align: center;
+   }
+   br {
+    text-align: right;
+   }
+  
+  .row {
+    margin: 8px -16px;
+  }
+
+  p a:link, a:visited {
+    background-color: #989898;
+    color: white;
+    padding: 5px 8px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  p a:hover, a:active {
+    background-color: 	#686868;
+  }
+
+  img {
+    border: 1.5px solid #989898;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four (two) equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* Clear floats after rows*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .icons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  i {
+    padding-right: 6px;
+  }
+li {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+  li span {
+    font-weight: bold;
+  }
+  
+  li a{
+    text-decoration: none;
+    color: royalblue;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+  li a:visited {
+    color: royalblue;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
